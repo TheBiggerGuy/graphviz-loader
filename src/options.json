@@ -1,0 +1,15 @@
+
+{
+  "additionalProperties": true,
+  "properties": {
+    "emitFile": {
+      "description": "Enables/Disables emit files.",
+      "type": "boolean"
+    },
+    "esModule": {
+      "description": "By default, graphviz-loader generates JS modules that use the ES modules syntax.",
+      "type": "boolean"
+    }
+  },
+  "type": "object"
+}

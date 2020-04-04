@@ -1,0 +1,53 @@
+{
+  "name": "graphviz-webpack-loader",
+  "version": "0.1.0",
+  "description": "Graphviz loader for Webpack",
+  "license": "MIT",
+  "main": "dist/cjs.js",
+  "engines": {
+    "node": ">= 10.16.0"
+  },
+  "scripts": {
+    "start": "npm run build -- -w",
+    "build": "NODE_ENV=production babel src -d dist --copy-files",
+    "test": "NODE_ENV=test jest",
+    "lint": "npm-run-all -l -p \"lint:**\"",
+    "lint:js": "eslint --cache ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheBiggerGuy/graphviz-webpack-loader.git"
+  },
+  "author": "Guy Taylor <npm@thebiggerguy.com",
+  "bugs": {
+    "url": "https://github.com/TheBiggerGuy/graphviz-webpack-loader/issues"
+  },
+  "homepage": "https://github.com/TheBiggerGuy/graphviz-webpack-loader#readme",
+  "peerDependencies": {
+    "webpack": "^4.0.0 || ^5.0.0"
+  },
+  "dependencies": {
+    "loader-utils": "^2.0.0",
+    "schema-utils": "^2.6.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@webpack-contrib/eslint-config-webpack": "^3.0.0",
+    "babel-jest": "^25.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "prettier": "^1.19.1",
+    "webpack": "^4.42.0",
+    "npm-run-all": "^4.1.5",
+    "jest": "^25.1.0"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "files": [
+    "dist"
+  ]
+}
